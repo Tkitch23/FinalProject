@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditTeamController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="494.0" layoutX="-16.0" layoutY="-86.0" stroke="BLACK" strokeType="INSIDE" width="620.0" />
+      <TableView fx:id="table" editable="true" layoutY="43.0" prefHeight="320.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="fName" prefWidth="176.0" text="First Name" />
+            <TableColumn fx:id="lName" prefWidth="324.0" text="Last Name" />
+            <TableColumn fx:id="age" minWidth="0.0" prefWidth="99.0" text="Age" />
+        </columns>
+      </TableView>
+      <ChoiceBox fx:id="teamName" layoutX="5.0" layoutY="6.0" prefHeight="29.0" prefWidth="249.0" />
+      <Button layoutX="264.0" layoutY="6.0" mnemonicParsing="false" onAction="#populateTable" text="Select Team" />
+      <Button layoutX="466.0" layoutY="6.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button layoutX="527.0" layoutY="6.0" mnemonicParsing="false" onAction="#confirmDelete" text="Delete" />
+      <Button layoutX="404.0" layoutY="6.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <ImageView fitHeight="29.0" fitWidth="37.0" layoutX="553.0" layoutY="363.0" onMouseClicked="#closing" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

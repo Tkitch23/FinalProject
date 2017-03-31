@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MeetChoiceCreator">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#034a8c" height="400.0" stroke="#034a8c" strokeType="INSIDE" width="600.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="400.0" layoutX="300.0" stroke="DODGERBLUE" strokeType="INSIDE" width="4.0" />
+      <Circle fill="DODGERBLUE" layoutX="302.0" layoutY="210.0" onMouseClicked="#handleHome" radius="31.0" stroke="DODGERBLUE" strokeType="INSIDE" />
+      <ImageView fitHeight="56.0" fitWidth="48.0" layoutX="278.0" layoutY="186.0" onMouseClicked="#handleHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="47.0" layoutY="40.0" onMouseClicked="#handleEventAdd" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/Whistle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="386.0" layoutY="28.0" onMouseClicked="#handleSwimmerAdd" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/goggle.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="78.0" layoutY="272.0" prefHeight="48.0" prefWidth="169.0" text="ADD EVENTS" textFill="DODGERBLUE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="384.0" layoutY="279.0" text="ADD SWIMMERS" textFill="DODGERBLUE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="414.0" layoutY="314.0" text="TO EVENTS" textFill="DODGERBLUE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

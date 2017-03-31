@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.IntErrorController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="307.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="300.0" />
+      <Label layoutX="121.0" layoutY="111.0" prefHeight="39.0" prefWidth="207.0" text="IS NOT AN INTEGER" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="8.0" text="ERROR" textFill="RED">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="error" layoutX="25.0" layoutY="111.0" prefHeight="39.0" prefWidth="116.0" text="not an int" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="165.0" prefHeight="39.0" prefWidth="300.0" text="please enter a valid whole number" textFill="RED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="72.0" layoutY="211.0" mnemonicParsing="false" onAction="#exit" prefHeight="75.0" prefWidth="157.0" text="EXIT" />
+   </children>
+</AnchorPane>

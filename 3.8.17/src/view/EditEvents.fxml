@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EventEditController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="494.0" layoutX="-16.0" layoutY="-86.0" stroke="BLACK" strokeType="INSIDE" width="620.0" />
+      <TableView fx:id="table" editable="true" layoutY="43.0" prefHeight="320.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="eName" prefWidth="310.0" text="Event  Name" />
+            <TableColumn fx:id="eNumber" prefWidth="145.0" text="Event Number" />
+            <TableColumn fx:id="hNumber" minWidth="0.0" prefWidth="144.0" text="# of Heats" />
+        </columns>
+      </TableView>
+      <Button layoutX="257.0" layoutY="6.0" mnemonicParsing="false" onAction="#edit" text="Edit" />
+      <Button layoutX="335.0" layoutY="6.0" mnemonicParsing="false" onAction="#confirmDelete" text="Delete" />
+      <Button layoutX="176.0" layoutY="6.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <ImageView fitHeight="43.0" fitWidth="38.0" layoutX="537.0" layoutY="363.0" onMouseClicked="#goHome" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Resources/home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
